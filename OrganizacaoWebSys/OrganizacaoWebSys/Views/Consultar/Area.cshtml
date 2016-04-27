@@ -1,0 +1,34 @@
+﻿@model IEnumerable<OrganizacaoWebSys.Models.Area>
+@{
+    ViewBag.Title = "Area";
+}
+
+<p><h4>#</h4></p>
+
+<p>
+    <h2>Area</h2> @Html.ActionLink("Cadastrar", "Create")  
+</p>
+<div class="container">
+    @Html.ActionLink("Colaborador", "Colaborador", "Consultar", new { area = "" }, new { @class = "navbar-brand" })
+    @Html.ActionLink("Area", "Area", "Consultar", new { area = "" }, new { @class = "navbar-brand" })
+    @Html.ActionLink("Tipo de Projeto", "TipoProjeto", "Consultar", new { area = "" }, new { @class = "navbar-brand" })
+    @Html.ActionLink("Projeto", "Projeto", "Consultar", new { area = "" }, new { @class = "navbar-brand" })
+</div>
+
+<table class="table">
+    <tr>
+        <th>Nome</th>
+    </tr>
+
+    @foreach (var item in Model) {
+    <tr>
+        <td>@item.Nome</td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Detalhes", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Excluir", "DelArea", new {  id=item.ID })
+        </td>
+    </tr>
+    }
+
+</table>

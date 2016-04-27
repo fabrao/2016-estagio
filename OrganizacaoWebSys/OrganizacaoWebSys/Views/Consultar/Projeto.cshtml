@@ -1,0 +1,75 @@
+﻿@model IEnumerable<OrganizacaoWebSys.Models.Projeto>
+
+@{
+    ViewBag.Title = "Projeto";
+}
+<p><h4>#</h4></p>
+<h2>Projeto</h2>
+<div class="container">
+    @Html.ActionLink("Colaborador", "Colaborador", "Consultar", new { area = "" }, new { @class = "navbar-brand" })
+    @Html.ActionLink("Area", "Area", "Consultar", new { area = "" }, new { @class = "navbar-brand" })
+    @Html.ActionLink("Tipo de Projeto", "TipoProjeto", "Consultar", new { area = "" }, new { @class = "navbar-brand" })
+    @Html.ActionLink("Projeto", "Projeto", "Consultar", new { area = "" }, new { @class = "navbar-brand" })
+</div>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataInicio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataTerino)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Responsavel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Area)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TipoProjeto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TempoEstimado)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataInicio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataTerino)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Responsavel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Area)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TipoProjeto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TempoEstimado)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

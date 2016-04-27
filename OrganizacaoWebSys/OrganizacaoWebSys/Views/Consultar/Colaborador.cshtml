@@ -1,0 +1,69 @@
+﻿@model IEnumerable<OrganizacaoWebSys.Models.Colaborador>
+
+@{
+    ViewBag.Title = "Colaborador";
+}
+<p><h4>#</h4></p>
+<h2>Colaborador</h2>
+<div class="container">
+    @Html.ActionLink("Colaborador", "Colaborador", "Consultar", new { area = "" }, new { @class = "navbar-brand" })
+    @Html.ActionLink("Area", "Area", "Consultar", new { area = "" }, new { @class = "navbar-brand" })
+    @Html.ActionLink("Tipo de Projeto", "TipoProjeto", "Consultar", new { area = "" }, new { @class = "navbar-brand" })
+    @Html.ActionLink("Projeto", "Projeto", "Consultar", new { area = "" }, new { @class = "navbar-brand" })
+</div>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataContratacao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataDemissao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataNascimento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sexo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CargaHoraria)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @item.Nome
+        </td>
+        <td>
+            @item.DataContratacao
+        </td>
+        <td>
+            @item.DataDemissao
+        </td>
+        <td>
+            @item.DataNascimento
+        </td>
+        <td>
+            @item.Sexo
+        </td>
+        <td>
+            @item.CargaHoraria
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Detalhes", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Deletar", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>
