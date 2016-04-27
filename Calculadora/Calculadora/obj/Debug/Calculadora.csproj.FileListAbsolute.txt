@@ -1,0 +1,18 @@
+c:\users\renan\documents\visual studio 2015\Projects\Calculadora\Calculadora\bin\Debug\Calculadora.exe.config
+c:\users\renan\documents\visual studio 2015\Projects\Calculadora\Calculadora\bin\Debug\Calculadora.exe
+c:\users\renan\documents\visual studio 2015\Projects\Calculadora\Calculadora\bin\Debug\Calculadora.pdb
+c:\users\renan\documents\visual studio 2015\Projects\Calculadora\Calculadora\obj\Debug\Calculadora.csprojResolveAssemblyReference.cache
+c:\users\renan\documents\visual studio 2015\Projects\Calculadora\Calculadora\obj\Debug\Calculadora.CalculadoraForm.resources
+c:\users\renan\documents\visual studio 2015\Projects\Calculadora\Calculadora\obj\Debug\Calculadora.Properties.Resources.resources
+c:\users\renan\documents\visual studio 2015\Projects\Calculadora\Calculadora\obj\Debug\Calculadora.csproj.GenerateResource.Cache
+c:\users\renan\documents\visual studio 2015\Projects\Calculadora\Calculadora\obj\Debug\Calculadora.exe
+c:\users\renan\documents\visual studio 2015\Projects\Calculadora\Calculadora\obj\Debug\Calculadora.pdb
+E:\Dropbox\4Logic\Projects\Calculadora\Calculadora\bin\Debug\Calculadora.exe.config
+E:\Dropbox\4Logic\Projects\Calculadora\Calculadora\obj\Debug\Calculadora.exe
+E:\Dropbox\4Logic\Projects\Calculadora\Calculadora\obj\Debug\Calculadora.pdb
+E:\Dropbox\4Logic\Projects\Calculadora\Calculadora\bin\Debug\Calculadora.exe
+E:\Dropbox\4Logic\Projects\Calculadora\Calculadora\bin\Debug\Calculadora.pdb
+E:\Dropbox\4Logic\Projects\Calculadora\Calculadora\obj\Debug\Calculadora.csprojResolveAssemblyReference.cache
+E:\Dropbox\4Logic\Projects\Calculadora\Calculadora\obj\Debug\Calculadora.CalculadoraForm.resources
+E:\Dropbox\4Logic\Projects\Calculadora\Calculadora\obj\Debug\Calculadora.Properties.Resources.resources
+E:\Dropbox\4Logic\Projects\Calculadora\Calculadora\obj\Debug\Calculadora.csproj.GenerateResource.Cache
